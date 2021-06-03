@@ -35,6 +35,14 @@ const existsProduct = async(id) => {
     }
 }
 
+const validCollection = (collection = '', collectionValids = []) => {
+
+    const include = collectionValids.includes(collection);
+    if (!include) {
+        throw new Error(`La colección ${collection} no es permitida, permitidas ${collectionValids}`);
+    }
+    return true;
+}
 
 
 
@@ -43,5 +51,6 @@ module.exports = {
     emailExists,
     existsId,
     existsCategory,
-    existsProduct
+    existsProduct,
+    validCollection
 }

@@ -1,11 +1,11 @@
-const Auth = require('./auth');
-const Categories = require('./categories');
-const Products = require('./products');
-const Users = require('./users');
+const AuthC = require('./auth');
+const CategoriesC = require('./categories');
+const ProductsC = require('./products');
+const UsersC = require('./users');
 
 module.exports = {
-    Auth,
-    Categories,
-    Products,
-    Users
+    AuthC,
+    CategoriesC,
+    ProductsC,
+    UsersC
 }
